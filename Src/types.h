@@ -49,4 +49,9 @@ typedef struct {
 	vector3 gyro;
 } MeasurementState;
 
+typedef enum {
+	READ,
+	WRITE
+} I2C_Direction;
+
 #endif /* TYPES_H_ */

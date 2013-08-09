@@ -127,28 +127,28 @@ typedef enum {
 
 // \typedef Accel High Pass Filter
 typedef enum {
-	MPU6050_A_HPF_RESET  = 0b000,//!< MPU6050_A_HPF_RESET
-	MPU6050_A_HPF_5HZ    = 0b001,//!< MPU6050_A_HPF_5HZ
-	MPU6050_A_HPF_2p5HZ  = 0b010,//!< MPU6050_A_HPF_2p5HZ
-	MPU6050_A_HPF_1p25HZ = 0b011,//!< MPU6050_A_HPF_1p25HZ
-	MPU6050_A_HPF_0p63HZ = 0b100,//!< MPU6050_A_HPF_0p63HZ
-	MPU6050_A_HPF_HOLD   = 0b111 //!< MPU6050_A_HPF_HOLD
+	MPU6050_A_HPF_RESET  = 0,//!< MPU6050_A_HPF_RESET
+	MPU6050_A_HPF_5HZ    = 1,//!< MPU6050_A_HPF_5HZ
+	MPU6050_A_HPF_2p5HZ  = 2,//!< MPU6050_A_HPF_2p5HZ
+	MPU6050_A_HPF_1p25HZ = 3,//!< MPU6050_A_HPF_1p25HZ
+	MPU6050_A_HPF_0p63HZ = 4,//!< MPU6050_A_HPF_0p63HZ
+	MPU6050_A_HPF_HOLD   = 7, //!< MPU6050_A_HPF_HOLD
 } mpu6050_accel_hpf;
 
 // \typedef Accel Full Scale
 typedef enum {
-	MPU6050_A_SCALE_pm2g   = (0b00 << 3),//!< MPU6050_A_SCALE_pm2g
-	MPU6050_A_SCALE_pm4g   = (0b01 << 3),//!< MPU6050_A_SCALE_pm4g
-	MPU6050_A_SCALE_pm8g   = (0b10 << 3),//!< MPU6050_A_SCALE_pm8g
-	MPU6050_A_SCALE_pm16g  = (0b11 << 3) //!< MPU6050_A_SCALE_pm16g
+	MPU6050_A_SCALE_pm2g   = (0 << 3),//!< MPU6050_A_SCALE_pm2g
+	MPU6050_A_SCALE_pm4g   = (1 << 3),//!< MPU6050_A_SCALE_pm4g
+	MPU6050_A_SCALE_pm8g   = (2 << 3),//!< MPU6050_A_SCALE_pm8g
+	MPU6050_A_SCALE_pm16g  = (3 << 3), //!< MPU6050_A_SCALE_pm16g
 } mpu6050_accel_scale;
 
 // \typedef Gyro Full Scale
 typedef enum {
-	MPU6050_G_SCALE_pm250   = (0b00 << 3),//!< MPU6050_G_SCALE_pm250
-	MPU6050_G_SCALE_pm500   = (0b01 << 3),//!< MPU6050_G_SCALE_pm500
-	MPU6050_G_SCALE_pm1000  = (0b10 << 3),//!< MPU6050_G_SCALE_pm1000
-	MPU6050_G_SCALE_pm2000  = (0b11 << 3) //!< MPU6050_G_SCALE_pm2000
+	MPU6050_G_SCALE_pm250   = (0 << 3),//!< MPU6050_G_SCALE_pm250
+	MPU6050_G_SCALE_pm500   = (1 << 3),//!< MPU6050_G_SCALE_pm500
+	MPU6050_G_SCALE_pm1000  = (2 << 3),//!< MPU6050_G_SCALE_pm1000
+	MPU6050_G_SCALE_pm2000  = (3 << 3), //!< MPU6050_G_SCALE_pm2000
 } mpu6050_gyro_scale;
 
 #endif /* MPU6050_REGISTER_MAP_H_ */
